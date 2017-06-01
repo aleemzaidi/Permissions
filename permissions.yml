@@ -1,0 +1,18 @@
+groups:
+    default:
+        permissions:
+            - test.permissions
+        users:
+    member:
+        permissions:
+        users:
+    moderator:
+        permissions:
+        users:
+    admin:
+        permissions:
+        users:
+users:
+    UserName:
+        permissions:
+        group:
