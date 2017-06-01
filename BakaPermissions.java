@@ -1,6 +1,9 @@
 package baka;
 
 public class BakaPermissions extends JavaPlugin {
+    
+    File permissionsFile = null;
+    FileConfiguration permissions = null;
 
     @Override
     public void onEnable() {
@@ -17,5 +20,13 @@ public class BakaPermissions extends JavaPlugin {
         String pluginVersion = pdf.getVersion();
         getLogger().info(pluginName + " v" + pluginVersion + " disabled!");
     }
-
+    
+    private void loadYamls() {
+        if(permissionsFile == null) {
+            permissionsFile = new File(getDataFolder(), "permissions.yml);
+        }
+        permissions = YamlConfiguration.loadConfiguration(permissionsFile);
+        
+    }
+    
 }
