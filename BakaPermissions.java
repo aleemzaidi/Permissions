@@ -27,6 +27,7 @@ public class BakaPermissions extends JavaPlugin {
         }
         permissions = YamlConfiguration.loadConfiguration(permissionsFile);
         
+        
     }
     
 }
