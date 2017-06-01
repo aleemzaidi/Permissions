@@ -1,4 +1,4 @@
-package baka.bhai;
+package baka;
 
 public class BakaPermissions extends JavaPlugin {
 
