@@ -27,7 +27,12 @@ public class BakaPermissions extends JavaPlugin {
         }
         permissions = YamlConfiguration.loadConfiguration(permissionsFile);
         
-        
+        Reader InputStream = new InputStreamReader(this.getResource("permissions.yml"), "UTF-8");
+        if(InputStream != null)
+        {
+            YamlConfiguration defPermissions = YamlConfiguration.loadConfiguration(InputStream);
+            permissions.setDefaults(defPermissions);
+        }
     }
     
 }
