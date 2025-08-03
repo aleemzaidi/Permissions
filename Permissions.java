@@ -1,6 +1,6 @@
-package baka;
+package bhai;
 
-public class BakaPermissions extends JavaPlugin {
+public class Permissions extends JavaPlugin {
     
     File permissionsFile = null;
     FileConfiguration permissions = null;
